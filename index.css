@@ -1,0 +1,98 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:rgb(187, 185, 180);
+}
+
+
+header img{
+    height: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    color:rgb(150, 22, 29);
+    font-size: 1.5rem;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(104, 13, 18);
+    justify-content: space-between;
+    padding: 5px 100px;
+    align-items: center;
+}
+
+main img {
+    height: 250px;
+    width: 300px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    margin: 7.2% auto;
+    color: black; 
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 100px;
+}
+
+.destaque{
+    padding: 10px;
+}
+
+footer{
+    background: rgb(104, 13, 18);
+    color: grey;
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 760px){
+header{
+  
+}
+main{
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.destaque{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.destaque img{
+    height: 180px; 
+}
+}
+@media screen and (max-width: 360px){
+    header img{
+        height: 150px;
+        margin-left: 30%;
+    }
+
+    header a{
+        margin-left: 50%;
+    }
+
+    header{
+        text-align: center
+    }
+
+    main{
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+
+    footer{
+        margin: auto;
+    }
+}
